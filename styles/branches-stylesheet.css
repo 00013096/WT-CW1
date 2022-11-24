@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.header {
+    display: flex;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 6%)
+}
+
+.list-of-screens {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-of-screens>li {
+    margin-right: 2rem;
+}
+
+.list-of-screens>li:hover {
+    cursor: pointer;
+}
+
+.list-of-screens a {
+    text-decoration: none;
+    color: black;
+}
+
+.header>div img {
+    background-color: rgb(255, 207, 0);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.header>div p {
+    margin: 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgb(255, 207, 0);
+}
+
+.registration {
+    margin-top: 5%;
+    background-image:
+        url("https://web.inter-nation.uz/wp-content/uploads/2022/01/form-row-bg.png?id=93");
+    padding: 4% 20%;
+    background-size: cover;
+}
+
+.registration>div {
+    display: flex;
+    transform: translateY(35%);
+    justify-content: space-between;
+}
+
+.registration>div>h1 {
+    width: 50%;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+span.white {
+    color: white;
+}
+
+.registration>div>p {
+    width: 30%;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.registration>ul {
+    display: flex;
+    padding-left: 0;
+    transform: translateY(35%);
+    margin: 4rem 0;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.registration>ul>li {
+    width: 30%;
+}
+
+.registration>ul>li>input,
+.registration>ul>li>button {
+    width: 100%;
+    height: 80px;
+    font-size: 1.2rem;
+}
+
+.registration>ul>li>input {
+    background-color: transparent;
+    border: 1px solid #363435;
+    padding: 0 1rem;
+    color: black;
+}
+
+.registration>ul>li>input::placeholder {
+    color: black;
+}
+
+.registration>ul>li>input:focus {
+    outline: none;
+    border: 1px solid #363435;
+}
+
+.registration>ul>li>button {
+    color: #ffd626;
+    background-color: #363435;
+    border: none;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.branch-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    transform: translate(0%, -80%);
+}
+
+.branch-container {
+    position: relative;
+    padding: 0% 15%;
+    max-height: 650px;
+    background-image: url("https://web.inter-nation.uz/wp-content/uploads/2022/01/group.png?id=210.webp");
+    background-size: cover;
+}
+
+.branch-container>h1 {
+    transform: translate(28%, 20%);
+    color: #ebeaea;
+    transition: ease 0.2s;
+    font-size: 25rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.branch-text {
+    width: 40%;
+}
+
+.branch-text>h2 {
+    font-size: 3rem;
+    margin: 0;
+    max-width: 150px;
+}
+
+.branch-text>p {
+    font-size: 1.1rem;
+    max-width: 95%;
+    margin: 0;
+}
+
+.location {
+    display: flex;
+}
+
+.location>div {
+    margin-left: 10px;
+}
+
+.location>div>h3 {
+    transition: .3s;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.location>div>p {
+    transition: .3s;
+    font-size: 1.2rem;
+    max-height: 50px;
+    margin: 0;
+}
+
+span.yellow {
+    color: #ffcf00;
+    font-size: 1.1rem;
+}
+
+.img {
+    position: relative;
+    background-image: url("https://web.inter-nation.uz/wp-content/uploads/2022/09/Drujba-converted.jpg");
+    background-size: cover;
+    width: 58%;
+    transition: .3s;
+    display: flex;
+}
+
+.img>p {
+    position: absolute;
+    color: black;
+    background-color: #ffcf00;
+    height: fit-content;
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.img>p:first-child {
+    right: 70px;
+    bottom: 15px;
+}
+
+.img>p:last-child {
+    right: 20px;
+    bottom: 15px;
+}
+
+.directions {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    bottom: 4rem;
+    padding-left: 0;
+    left: 48%;
+    list-style: none;
+}
+
+.directions>li {
+    width: 10px;
+    max-height: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: fit-content;
+    margin-right: 10px;
+    color: transparent;
+    background-color: #d6d6d6;
+    border-radius: 50px;
+}
+
+.directions>li.chosen {
+    background-color: #ffcf00;
+    width: 20px;
+}
+
+.footer>a {
+    width: 50%;
+    background-image: url("../images/drujba.png");
+    background-size: cover;
+    margin-left: 1rem;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    height: fit-content;
+    background-color: rgb(55, 52, 53);
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.footer>div>h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffcf00;
+}
+
+ul.branches {
+    margin: 3rem 0;
+    padding-left: 0;
+}
+
+ul.branches>li {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+ul.branches>li.selected {
+    border-bottom: 3px solid #ffcf00;
+}
+
+ul.branches {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer>div>ul {
+    padding-left: 0;
+}
+
+.footer>div>ul>li {
+    padding: 0;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer>div>h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer>div>ul>li>p {
+    margin: 0;
+}
+
+.footer>div>ul>li>img {
+    background-color: #ffcf00;
+    width: 20px;
+    height: 20px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}

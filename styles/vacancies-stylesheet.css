@@ -1,0 +1,51 @@
+.container>ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container>ul>li {
+    position: relative;
+    width: 22%;
+    border: 1px solid rgb(0, 0, 0, 10%);
+    margin: 2rem 0;
+    margin-right: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 2px 20px rgb(0 0 0 / 10%);
+}
+
+.container>ul>li>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    margin: 2rem 0;
+    background-color: white;
+}
+
+.container>ul>li>p {
+    font-size: 1.8rem;
+    background-color: #ffcf00;
+    font-weight: 500;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    margin: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container>ul>li>p::before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.8rem;
+    background-image: url("https://hr.inter-nation.uz/application/img/right-arrow-2.svg");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 50%;
+}

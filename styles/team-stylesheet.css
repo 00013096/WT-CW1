@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.header {
+    display: flex;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 6%)
+}
+
+.list-of-screens {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-of-screens>li {
+    margin-right: 2rem;
+}
+
+.list-of-screens>li:hover {
+    cursor: pointer;
+}
+
+.list-of-screens a {
+    text-decoration: none;
+    color: black;
+}
+
+.header>div img {
+    background-color: rgb(255, 207, 0);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.header>div p {
+    margin: 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgb(255, 207, 0);
+}
+
+p.enabled {
+    background-color: #ffcf00;
+    color: black;
+}
+
+p.disabled {
+    background-color: #ffd00076;
+    color: #00000076;
+}
+
+body>h1 {
+    margin: 2rem 15%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.teachers {
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+}
+
+.teachers>p {
+    margin: 0 2%;
+    cursor: pointer;
+    height: fit-content;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.3rem 0.42rem;
+}
+
+.list-of-teachers {
+    border: 1px solid gray;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 5%;
+}
+
+.list-of-teachers>li {
+    width: 25%;
+    padding-top: 2.5rem;
+    padding-bottom: 1.2rem;
+    border-right: 1px solid grey;
+    transition: all ease-in .3s;
+}
+
+.list-of-teachers>li.visible:nth-child(4) {
+    border-right: none;
+}
+
+.list-of-teachers>li>div {
+    width: 90%;
+    max-height: 400px;
+    margin-left: 5%;
+    background-color: #ffcf00;
+}
+
+.list-of-teachers>li>div>img {
+    transform: translateY(-10%);
+    width: 100%;
+}
+
+.list-of-teachers>li>p {
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    padding-left: 5px;
+    border-left: 5px solid #ffcf00;
+}
+
+.list-of-teachers>li.hidden,
+.list-of-teachers>li.hidden>p,
+.list-of-teachers>li.hidden>div {
+    overflow: hidden;
+    width: 0;
+    border-right: none;
+}
+
+.footer>a {
+    width: 50%;
+    background-image: url("../images/drujba.png");
+    background-size: cover;
+    margin-left: 1rem;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    height: fit-content;
+    background-color: rgb(55, 52, 53);
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.footer>div>h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffcf00;
+}
+
+ul.branches {
+    margin: 3rem 0;
+    padding-left: 0;
+}
+
+ul.branches>li {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+ul.branches>li.selected {
+    border-bottom: 3px solid #ffcf00;
+}
+
+ul.branches {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer>div>ul {
+    padding-left: 0;
+}
+
+.footer>div>ul>li {
+    padding: 0;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer>div>h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer>div>ul>li>p {
+    margin: 0;
+}
+
+.footer>div>ul>li>img {
+    background-color: #ffcf00;
+    width: 20px;
+    height: 20px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+body>h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 6%)
+}
+
+.list-of-screens {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-of-screens>li {
+    margin-right: 2rem;
+}
+
+.list-of-screens>li:hover {
+    cursor: pointer;
+}
+
+.list-of-screens a {
+    text-decoration: none;
+    color: black;
+}
+
+.header>div img {
+    background-color: rgb(255, 207, 0);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.header>div p {
+    margin: 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgb(255, 207, 0);
+}
+
+.content {
+    width: 100%;
+    aspect-ratio: 2.2/1;
+    background-image: url("https://web.inter-nation.uz/wp-content/uploads/2022/10/Main-backgraund-1.webp?id=1394");
+    background-size: cover;
+    background-position: 25%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.content>div {
+    height: fit-content;
+    width: fit-content;
+    transform: translateX(215%) translateY(38%);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 1.8rem;
+}
+
+.content>div h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.content>div p {
+    font-size: 1rem;
+    max-width: 300px;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.content>div input {
+    display: block;
+    width: 90%;
+    height: 60px;
+    padding-left: 8%;
+    max-width: 100%;
+    color: #777;
+    font-weight: 550;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.content>div input:focus {
+    outline: none;
+}
+
+.content>div button {
+    margin-top: 1.5rem;
+    height: 55px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.about-school {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.about-school>div.youtube-img {
+    width: 40%;
+    background-image: url("https://img.youtube.com/vi/zqiijOvrLd0/maxresdefault.jpg");
+    background-size: cover;
+    background-position: 50%;
+}
+
+.about-school>div.youtube-img img {
+    width: 15%;
+    height: 18%;
+    transition: all;
+    transform: translateX(280%) translateY(200%);
+}
+
+.about-school>div:last-child {
+    width: 60%;
+    padding: 1.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0;
+}
+
+.about-school h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.about-school p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-school>div:last-child>ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+.about-school>div:last-child>ul>li {
+    margin-right: 1rem;
+}
+
+span.number {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.advantages {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+}
+
+.advantages>h3 {
+    font-size: 2.5rem;
+    width: 40%;
+    font-weight: 700;
+}
+
+.advantages>p {
+    text-align: end;
+}
+
+p.enabled {
+    background-color: #ffcf00;
+    color: black;
+}
+
+p.disabled {
+    background-color: #ffd00076;
+    color: #00000076;
+}
+
+.list-of-advantages {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    list-style: none;
+    margin-bottom: 10rem;
+}
+
+.list-of-advantages>li {
+    cursor: pointer;
+    width: 33%;
+    height: 250px;
+    transition: all ease .1s;
+}
+
+.list-of-advantages>li>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.list-of-advantages>li:nth-child(3).margin,
+.list-of-advantages>li:nth-child(5).margin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.list-of-advantages>li>p {
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: rgb(38 38 38/90%);
+    margin: 0;
+    transform: translateY(-80%);
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    transition: cubic-bezier(1, 1, 0, 0) .1s;
+    box-sizing: border-box;
+    display: block;
+}
+
+.list-of-advantages>li:hover p {
+    visibility: collapse;
+    width: 0;
+}
+
+.list-of-advantages>li.hidden {
+    overflow: hidden;
+    width: 0;
+}
+
+.list-of-advantages>p:hover {
+    cursor: pointer;
+}
+
+.list-of-advantages>p {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.3rem 0.42rem;
+}
+
+.footer>a {
+    width: 50%;
+    background-image: url("../images/drujba.png");
+    background-size: cover;
+    margin-left: 1rem;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    height: fit-content;
+    background-color: rgb(55, 52, 53);
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.footer>div>h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffcf00;
+}
+
+ul.branches {
+    margin: 3rem 0;
+    padding-left: 0;
+}
+
+ul.branches>li {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+ul.branches>li.selected {
+    border-bottom: 3px solid #ffcf00;
+}
+
+ul.branches {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer>div>ul {
+    padding-left: 0;
+}
+
+.footer>div>ul>li {
+    padding: 0;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer>div>h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer>div>ul>li>p {
+    margin: 0;
+}
+
+.footer>div>ul>li>img {
+    background-color: #ffcf00;
+    width: 20px;
+    height: 20px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+        Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.header {
+    display: flex;
+    padding-left: 18%;
+    padding-right: 18%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 6%)
+}
+
+.list-of-screens {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-of-screens>li {
+    margin-right: 2rem;
+}
+
+.list-of-screens>li:hover {
+    cursor: pointer;
+}
+
+.list-of-screens a {
+    text-decoration: none;
+    color: black;
+}
+
+.header>div img {
+    background-color: rgb(255, 207, 0);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.header>div p {
+    margin: 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgb(255, 207, 0);
+}
+
+.container {
+    padding: 0 15%;
+    margin: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container>ul {
+    width: 70%;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    padding-left: 0;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.events>li {
+    width: 49%;
+    margin-bottom: 1rem;
+}
+
+.events>li:hover img {
+    transform: scale(1.1);
+}
+
+.events>li img {
+    transition: .3s;
+}
+
+.container>ul>li img.arrow {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background-color: #fecd00;
+    border-radius: 50%;
+    transform: translate(850%, -250%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container>ul>li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container>div {
+    width: 40%;
+    transform: translateY(-20%);
+}
+
+.galery {
+    text-align: end;
+    max-width: 200px;
+}
+
+.galery>h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.galery>p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.reviews {
+    display: flex;
+    width: 70%;
+    padding: 0% 15%;
+    margin-bottom: 2%;
+}
+
+.reviews>div {
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    display: flex;
+    padding: 2% 0;
+    border: 1px solid #ededed;
+    justify-content: space-evenly;
+}
+
+.reviews>div>p {
+    width: 50%;
+    font-size: 1rem;
+}
+
+.person {
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.person>img {
+    transform: translateX(50%);
+    border-radius: 50%;
+    border: 4px solid #efd53d;
+}
+
+div.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.directions {
+    margin: 0;
+    margin-bottom: 5%;
+    display: flex;
+    transform: translate(45%);
+    padding-left: 0;
+    list-style: none;
+}
+
+.directions>li {
+    width: 10px;
+    max-height: 10px;
+    text-align: center;
+    cursor: pointer;
+    height: fit-content;
+    margin-right: 10px;
+    color: transparent;
+    background-color: #d6d6d6;
+    border-radius: 50px;
+}
+
+.directions>li.chosen {
+    background-color: #ffcf00;
+    width: 20px;
+}
+
+.footer>a {
+    width: 50%;
+    background-image: url("../images/drujba.png");
+    background-size: cover;
+    margin-left: 1rem;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    height: fit-content;
+    background-color: rgb(55, 52, 53);
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.footer>div>h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffcf00;
+}
+
+ul.branches {
+    margin: 3rem 0;
+    padding-left: 0;
+}
+
+ul.branches>li {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+ul.branches>li.selected {
+    border-bottom: 3px solid #ffcf00;
+}
+
+ul.branches {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer>div>ul {
+    padding-left: 0;
+}
+
+.footer>div>ul>li {
+    padding: 0;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer>div>h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer>div>ul>li>p {
+    margin: 0;
+}
+
+.footer>div>ul>li>img {
+    background-color: #ffcf00;
+    width: 20px;
+    height: 20px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
